@@ -58,7 +58,7 @@ For model inference, we support two options:
 
 All inference scripts are put under ```/inference_scripts```.
 
-# Controllable Image Generation 
+## Controllable Image Generation 
 
 <br>
 <img width="800" src="assets/concatenated_image.jpg"/>
@@ -66,7 +66,7 @@ All inference scripts are put under ```/inference_scripts```.
 
 
 
-## SDXL
+### SDXL
 
 <table>
   <tr>
@@ -96,7 +96,7 @@ sh inference_scripts/sdxl/sdxl_inference_depth.sh
 ```
 
 
-# Controllable Video Generation
+## Controllable Video Generation
 
 <br>
 <div>
@@ -105,7 +105,7 @@ sh inference_scripts/sdxl/sdxl_inference_depth.sh
 </div>
 <br>
 
-## I2VGen-XL
+### I2VGen-XL
 
 <table>
   <tr>
@@ -135,7 +135,7 @@ sh inference_scripts/sdxl/sdxl_inference_depth.sh
 </table>
 
 
-## SVD
+### SVD
 
 <table>
   <tr>
@@ -166,7 +166,7 @@ sh inference_scripts/sdxl/sdxl_inference_depth.sh
 
 
 
-# Video Generation with Multi-Condition Control
+## Video Generation with Multi-Condition Control
 
 <br>
 <img width="800" src="assets/boy_and_mom.gif"/>
@@ -193,7 +193,7 @@ We currently implemented multi-condition control on **I2VGen-XL**. The following
 
 
 
-# Video Generation with Sparse Control
+## Video Generation with Sparse Control
 
 <br>
 <img width="400" src="assets/museum.gif"/>
