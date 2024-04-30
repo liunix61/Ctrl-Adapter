@@ -30,8 +30,8 @@ applications, including video control, video control with multiple conditions, v
 sparse frame conditions, image control, zero-shot transfer to unseen conditions, and video editing.
 
 # 🔥 News
-- **Apr. 29, 2024**. **SDXL**, **I2VGen-XL**, and **SVD** inference code and checkpoints are all released!
 - **Apr. 30, 2024**. Training code released now! It's time to train Ctrl-Adapter on your desired backbone! 🚀🚀
+- **Apr. 29, 2024**. **SDXL**, **I2VGen-XL**, and **SVD** inference code and checkpoints are all released!
 
 
 # 🔧 Setup
@@ -121,7 +121,7 @@ sh inference_scripts/sdxl/sdxl_inference_depth.sh
 
 We list the inference scripts for different tasks mentioned in our paper as follows ⬇️
 
-## ▶️ Controllable Image Generation 
+## Controllable Image Generation 
 
 <br>
 <img width="800" src="assets/concatenated_image.jpg"/>
@@ -155,7 +155,7 @@ We list the inference scripts for different tasks mentioned in our paper as foll
 
 
 
-## ▶️ Controllable Video Generation
+## Controllable Video Generation
 
 <br>
 <div>
@@ -225,7 +225,7 @@ We list the inference scripts for different tasks mentioned in our paper as foll
 
 
 
-## ▶️ Video Generation with Multi-Condition Control
+## Video Generation with Multi-Condition Control
 
 <br>
 <img width="800" src="assets/boy_and_mom.gif"/>
@@ -252,7 +252,7 @@ We currently implemented multi-condition control on **I2VGen-XL**. The following
 
 
 
-## ▶️ Video Generation with Sparse Control
+## Video Generation with Sparse Control
 
 <br>
 <img width="400" src="assets/museum.gif"/>
@@ -327,7 +327,7 @@ Specifically, in the training scripts:
 
 
 
-### Step 5: Train Ctrl-Adapter on a New Backbone Model (Optioonal)
+### Step 5: Train Ctrl-Adapter on a New Backbone Model (Optional)
 
 To train Ctrl-Adapter on a new backbone model, basically here are several steps you need to take:
 
