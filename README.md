@@ -315,7 +315,7 @@ Most of our control condition extractors are directly utilized from the transfor
 
 All training configuration files and training scripts are placed under ```./configs``` and ```train_scripts``` respectively. 
 
-Here is a sample command to start training on SDXL with depth map as control condition.
+Here is the command we used to start training on SDXL with depth map as control condition.
 
 ```
 sh train_scripts/sdxl/sdxl_train_depth.sh
