@@ -71,7 +71,7 @@ Different image/video generation backbones may perform better with specific type
 We put some sample images/frames for inference under the folder ```./assets/evaluation```. You can add your custom examples following the same file structure illustrated below. 
 
 For model inference, we support two options:
-- If you already have condition image/frames extracted from some image/video, you can use inference (w/ extracted condition). 
+- If you already have condition image/frames extracted from some image/video, you can use inference (w/ extracted condition).
 
 ```bash
 ./assets/evaluation/images
@@ -321,12 +321,13 @@ Here is the command we used to start training on SDXL with depth map as control 
 sh train_scripts/sdxl/sdxl_train_depth.sh
 ```
 
-Specifically, in the training scripts:
+Specifically, in the training scripts, we added hyper-parameters that controls how many training steps we do evaluation. In this way, you can monitor the training process better.
 
 `--save_n_steps`: Save the trained adapter checkpoints every n training steps.
 
 `--validate_every_steps`: Perform evaluation every x training steps. The evaluation data are placed under ```./assets/evaluation```. If you prefer to evaluate different samples, you can replace them by following the same file structure.
 
+```--extract_control_conditions```: If you already have condition image/frames extracted from evaluation image/video (see Inference Data Structure section above), you can set it as ```False```. Otherwise, if you haven't extracted control conditions and only have the raw image/frames, you can set it as ```True```, and our code can automatically extract the control conditions from the evaluation image/frames. The default setting is ```False```.
 
 
 ### Step 5: Train Ctrl-Adapter on a New Backbone Model (Optional)
