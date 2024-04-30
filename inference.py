@@ -139,10 +139,6 @@ def parse_inference_args():
             Please note that our model might not be able to handle complex motions with very sparse frames"
             )
     inference_parser.add_argument(
-        "--inference_expert_masks",  
-        nargs='+', default=None
-        )
-    inference_parser.add_argument(
         '--use_size_512', 
         default=True, type=bool_flag,
         help="Our framework currently only support image/video generation with this parameter as True."
@@ -228,7 +224,7 @@ def inference_main(inference_args):
     else:
         adapter = ControlNetAdapter.from_pretrained(
             inference_args.local_checkpoint_path, 
-            subfolder = args.checkpoint_folder, 
+            subfolder = f"adapter_{inference_args.global_step}", 
             low_cpu_mem_usage=False, 
             device_map=None
             )

@@ -1,4 +1,6 @@
-"""Compute depth maps for images in the input folder.
+"""
+Compute depth maps for images in the input folder.
+the code is adapted from midas library: https://github.com/isl-org/MiDaS/tree/master
 """
 import os
 import sys
