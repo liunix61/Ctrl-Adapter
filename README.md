@@ -30,8 +30,8 @@ applications, including video control, video control with multiple conditions, v
 sparse frame conditions, image control, zero-shot transfer to unseen conditions, and video editing.
 
 # 🔥 News
-- Apr. 29, 2024. SDXL, I2VGen-XL, and SVD inference code and checkpoints are all released!
-- Apr. 30, 2024. Training code for SDXL, I2VGen-XL, and SVD has also been released now! It's time to train Ctrl-Adapter on your desired backbone!
+- **Apr. 29, 2024**. **SDXL**, **I2VGen-XL**, and **SVD** inference code and checkpoints are all released!
+- **Apr. 30, 2024**. Training code released now! It's time to train Ctrl-Adapter on your desired backbone! 🚀🚀
 
 
 # 🔧 Setup
