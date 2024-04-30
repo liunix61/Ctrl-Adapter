@@ -83,12 +83,14 @@ For model inference, we support two options:
 
 ./assets/evaluation/frames
     ├── depth
-    │   ├── 00000.png
-    │   ├── 00001.png
-    │   ...
-    │   ├── 00015.png
+    │   ├── newspaper_cat
+    │   │   ├── 00000.png
+    │   │   ├── 00001.png
+    │   │   ...
+    │   │   ├── 00015.png
     ├── raw_input
-    │   ├── 00000.png # only the 1st frame is needed for I2V models
+    │   ├── newspaper_cat
+    │   │   ├── 00000.png # only the 1st frame is needed for I2V models
     ├── captions.json
 ```
 
@@ -103,10 +105,11 @@ For model inference, we support two options:
 
 ./assets/evaluation/frames
     ├── raw_input
-    │   ├── 00000.png
-    │   ├── 00001.png
-    │   ...
-    │   ├── 00015.png
+    │   ├── newspaper_cat
+    │   │   ├── 00000.png
+    │   │   ├── 00001.png
+    │   │   ...
+    │   │   ├── 00015.png
     ├── captions.json
 ```
 
