@@ -54,7 +54,7 @@ class VideoLoader(Dataset):
 
         # read the csv file for prompts
         if self.metadata_path is not None:
-            metadata = pd.read_csv(self.metadata_path)[['video_path', 'score']]
+            metadata = pd.read_csv(self.metadata_path)[['filename']]
             metadata_list = list(metadata['video_path'].values)
             self.metadata = {metadata_list[i]: metadata_list[i].replace(".mp4", "") for i in range(len(metadata_list)) }
             del metadata, metadata_list
