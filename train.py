@@ -1516,21 +1516,6 @@ def main(args):
 
 
 
-
-
-"""
-
-CUDA_VISIBLE_DEVICES=0 accelerate launch --main_process_port 17004  train.py --machine desktop \
-    --yaml_file configs/Apr22_Main_pixart_single_depth_SR_ST.yaml \
-    --save_n_steps 5 --validate_every_steps 5 --save_starting_step 5 --max_eval 3 --width 1024 --height 1024 \
-    --evaluation_folder evaluation_cocoval_images --snr_gamma 5.0    
-
-    
-    
-"""
-
-
-
 if __name__ == "__main__":
     
     mp.set_start_method('spawn')
