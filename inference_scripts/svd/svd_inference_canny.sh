@@ -7,6 +7,6 @@ python inference.py \
 --skip_conv_in True \
 --n_sample_frames 14 \
 --num_inference_steps 25 \
---control_guidance_end 0.7 \
+--control_guidance_end 0.8 \
 --height 512 \
 --width 512

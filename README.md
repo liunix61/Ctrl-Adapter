@@ -119,6 +119,8 @@ Here is a sample command to run inference on SDXL with depth map as control (w/ 
 sh inference_scripts/sdxl/sdxl_inference_depth.sh
 ```
 
+⚠️  ```--control_guidance_end```: this is the most important parameter that balances generated image/video quality with control strength. If you notice the generated image/video does not follow the spatial control well, you can increase this value; and if you notice the generated image/video quality is not good because the spatial control is too strong, you can decrease this value. Detailed discussion of control strength via this parameter is shown in our paper.
+
 We list the inference scripts for different tasks mentioned in our paper as follows ⬇️
 
 ## Controllable Image Generation 
