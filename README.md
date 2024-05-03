@@ -277,7 +277,8 @@ To train Ctrl-Adapter on a new backbone model, basically here are several steps 
 # 📝 TODO List
 - [x] Release environment setup, inference code, and model checkpoints.
 - [x] Release training code.
-- [x] Training guideline to adapt our Ctrl-Adapter to new image/video diffusion models. 
+- [x] Training guideline to adapt our Ctrl-Adapter to new image/video diffusion models.
+- [ ] Ctrl-Adapter + DiT-based image/video generation backbones. (**WIP**)
 - [ ] Release evaluation code.
 
 💗 Please let us know in the issues or PRs if you're interested in any relevant backbones or down-stream tasks that can be implemented by our Ctrl-Adapter framework! Welcome to collaborate and contribute!
